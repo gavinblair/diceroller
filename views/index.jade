@@ -1,0 +1,12 @@
+form(method='post',action='/roll')
+	label(for='sides') Dice:
+	select(id='sides',name='sides')
+		option(value='6') D6
+		option(value='36') 2D6
+		option(value='8') D8
+		option(value='48') 2D8
+		option(value='10') D10
+		option(value='100') 2D10
+		option(value='20') D20
+		option(value='400') 2D20
+	input(type='submit',name='action',value='Create Roll')
