@@ -44,6 +44,7 @@ app.listen(3000, function(){
 
 app.get('/', function(req, res){
 	res.render('index');
+	res.end();
 });
 
 app.param(':id', function(req, res, next, id){
@@ -65,6 +66,7 @@ app.get('/roll/:id', function(req, res){
 		//output += "Roll value = "+roll.number;
 		res.render('rolled.jade', { sides: roll.sides, value: roll.number });
 	}
+	res.end();
 });
 
 app.post('/roll', function(req, res){
@@ -86,4 +88,5 @@ app.post('/roll', function(req, res){
 		//redirect to roll:id
 		//res.redirect('/roll/'+id);
 	}
+	res.end();
 });

@@ -1,5 +1,18 @@
 !!!
 html
-  head
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body!= body
+	head
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		script(type='text/javascript')
+			function ready(){
+				var divs = document.getElementsByTagName('div');
+				for(var x=0; x < divs.length; x++){
+					divs[x].onclick = function(){
+						document.getElementById('sides').value = this.getAttribute('data-sides');
+						document.getElementById('submit').click();
+					}
+					divs[x].onmouseover = function(){
+						document.getElementById('dicename').innerHTML = this.getAttribute('data-dicename');
+					}
+				}
+			}
+	body(onload='ready()')!= body

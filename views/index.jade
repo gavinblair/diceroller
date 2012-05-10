@@ -1,21 +1,21 @@
-form(method='post',action='/roll')
+form(method='post',action='/roll',id='theform')
 	label(for='sides') Dice:
 	select(id='sides',name='sides')
 		option(value='6') D6
 		option(value='36') 2D6
 		option(value='8') D8
-		option(value='48') 2D8
+		option(value='64') 2D8
 		option(value='10') D10
 		option(value='100') 2D10
 		option(value='20') D20
 		option(value='400') 2D20
-	input(type='submit',name='action',value='Create Roll')
-#d6
-#d6x2
-#d8
-#d8x2
-#d10
-#d10x2
-#d20
-#d20x2
+	input(type='submit',name='action',value='Create Roll',id='submit')
+#d6(data-sides=6,data-dicename="1d6")
+#d6x2(data-sides=36,data-dicename="2d6")
+#d8(data-sides=8,data-dicename="1d8")
+#d8x2(data-sides=64,data-dicename="2d8")
+#d10(data-sides=10,data-dicename="1d10")
+#d10x2(data-sides=100,data-dicename="2d10")
+#d20(data-sides=20,data-dicename="1d20")
+#d20x2(data-sides=400,data-dicename="2d20")
 #dicename 1d6

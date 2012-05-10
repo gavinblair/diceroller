@@ -9,9 +9,6 @@ body {
 form {
 	display: none;
 }
-a {
-  color: #00B7FF;
-}
 div {
 	position: absolute;
 	cursor: pointer;
@@ -23,7 +20,7 @@ div {
 	top: 61px;
 	left: 397px;
 }
-#d6:hover {
+#d6:hover, #d6:active, #d6:focus {
 	background-image: url(../images/1d6_hover.png);
 }
 #d6x2 {
@@ -33,7 +30,7 @@ div {
 	top: 137px;
 	left: 537px;
 }
-#d6x2:hover {
+#d6x2:hover, #d6x2:active, #d6x2:focus {
 	background-image: url(../images/2d6_hover.png);
 }
 #d8 {
@@ -43,7 +40,7 @@ div {
 	top: 324px;
 	left: 663px;
 }
-#d8:hover {
+#d8:hover, #d8:active, #d8:focus {
 	background-image: url(../images/1d8_hover.png);
 }
 #d8x2 {
@@ -53,7 +50,7 @@ div {
 	top: 484px;
 	left: 591px;
 }
-#d8x2:hover {
+#d8x2:hover, #d8x2:active, #d8x2:focus {
 	background-image: url(../images/2d8_hover.png);
 }
 #d10 {
@@ -63,7 +60,7 @@ div {
 	top: 597px;
 	left: 386px;
 }
-#d10:hover {
+#d10:hover, #d10:active, #d10:focus {
 	background-image: url(../images/1d10_hover.png);
 }
 #d10x2 {
@@ -73,7 +70,7 @@ div {
 	top: 531px;
 	left: 141px;
 }
-#d10x2:hover {
+#d10x2:hover, #d10x2:active, #d10x2:focus {
 	background-image: url(../images/2d10_hover.png);
 }
 #d20 {
@@ -83,7 +80,7 @@ div {
 	top: 316px;
 	left: 92px;
 }
-#d20:hover {
+#d20:hover, #d20:active, #d20:focus {
 	background-image: url(../images/1d20_hover.png);
 }
 #d20x2 {
@@ -93,7 +90,7 @@ div {
 	top: 137px;
 	left: 141px;
 }
-#d20x2:hover {
+#d20x2:hover, #d20x2:active, #d20x2:focus {
 	background-image: url(../images/2d20_hover.png);
 }
 #dicename {
