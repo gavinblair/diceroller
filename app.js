@@ -56,16 +56,15 @@ app.param(':id', function(req, res, next, id){
 
 app.get('/roll/:id', function(req, res){
 	//get info about roll
-	var output = '';
 	roll = req.roll[0];
 	if(roll.number == null) {
 		//rollable
-		output += "Roll this!";
+		res.render('rollthis.jade', { sides: roll.sides });
 	} else {
 		//already rolled
-		output += "Roll value = "+roll.number;
+		//output += "Roll value = "+roll.number;
+		res.render('rolled.jade', { sides: roll.sides, value: roll.number });
 	}
-	res.send(output);
 });
 
 app.post('/roll', function(req, res){
