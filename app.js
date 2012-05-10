@@ -9,10 +9,8 @@ var app = module.exports = express.createServer();
 
 //MySQL
 var mysql = require('mysql');
-var client = mysql.createClient({
-	user: 'root',
-	password: '',
-});
+var config = require('./config')
+var client = config.client;
 client.query('USE dice');
 
 // Configuration
