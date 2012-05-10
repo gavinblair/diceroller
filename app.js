@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -12,7 +11,7 @@ var app = module.exports = express.createServer();
 var mysql = require('mysql');
 var client = mysql.createClient({
 	user: 'root',
-	password: 'rtract1on',
+	password: '',
 });
 client.query('USE dice');
 
