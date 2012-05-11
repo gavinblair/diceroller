@@ -11,8 +11,52 @@ html
 						document.getElementById('submit').click();
 					}
 					divs[x].onmouseover = function(){
-						document.getElementById('dicename').innerHTML = this.getAttribute('data-dicename');
+						if(document.getElementById('dicename')) { 
+							document.getElementById('dicename').innerHTML = this.getAttribute('data-dicename');
+						}
 					}
+				}
+				if(document.getElementById("rollform")) {
+					var sides = document.getElementById("sides").value;
+					var rollme = document.getElementById("rollme");
+					var img = "";
+					sides = parseInt(sides);
+					switch(sides){
+						case 6:
+							img = "1d6";
+							break;
+						case 36:
+							img = "2d6";
+							break;
+						case 8:
+							img = "1d8";
+							break;
+						case 64:
+							img = "2d8";
+							break;
+						case 10:
+							img = "1d10";
+							break;
+						case 100:
+							img = "2d10";
+							break;
+						case 20:
+							img = "1d20";
+							break;
+						case 400:
+							img = "2d20";
+							break;
+					}
+					document.getElementById("rollme").style.backgroundImage = "url(/images/"+img+".png)";
+					var head = document.getElementsByTagName('head')[0];
+					var style = document.createElement('style');
+					var rules = document.createTextNode("#rollme:hover { background: url(/images/"+img+"_hover.png) no-repeat !important; }");
+
+					style.type = 'text/css';
+					if(style.styleSheet)
+						style.styleSheet.cssText = rules.nodeValue;
+					else style.appendChild(rules);
+					head.appendChild(style);
 				}
 			}
 	body(onload='ready()')!= body

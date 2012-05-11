@@ -1,0 +1,109 @@
+body {
+  padding: 100px;
+  font: 14px Georgia;
+  background: url(../images/vikingbg.jpg) top center;
+  width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+form {
+	display: none;
+}
+div {
+	position: absolute;
+	cursor: pointer;
+}
+#d6 {
+	background: url(../images/1d6.png) no-repeat;
+	width: 142px;
+	height: 135px;
+	top: 61px;
+	left: 397px;
+}
+#d6:hover, #d6:active, #d6:focus {
+	background-image: url(../images/1d6_hover.png);
+}
+#d6x2 {
+	background: url(../images/2d6.png) no-repeat;
+	width: 203px;
+	height: 127px;
+	top: 137px;
+	left: 537px;
+}
+#d6x2:hover, #d6x2:active, #d6x2:focus {
+	background-image: url(../images/2d6_hover.png);
+}
+#d8 {
+	background: url(../images/1d8.png) no-repeat;
+	width: 136px;
+	height: 138px;
+	top: 324px;
+	left: 663px;
+}
+#d8:hover, #d8:active, #d8:focus {
+	background-image: url(../images/1d8_hover.png);
+}
+#d8x2 {
+	background: url(../images/2d8.png) no-repeat;
+	width: 196px;
+	height: 160px;
+	top: 484px;
+	left: 591px;
+}
+#d8x2:hover, #d8x2:active, #d8x2:focus {
+	background-image: url(../images/2d8_hover.png);
+}
+#d10 {
+	background: url(../images/1d10.png) no-repeat;
+	width: 144px;
+	height: 136px;
+	top: 597px;
+	left: 386px;
+}
+#d10:hover, #d10:active, #d10:focus {
+	background-image: url(../images/1d10_hover.png);
+}
+#d10x2 {
+	background: url(../images/2d10.png) no-repeat;
+	width: 192px;
+	height: 122px;
+	top: 531px;
+	left: 141px;
+}
+#d10x2:hover, #d10x2:active, #d10x2:focus {
+	background-image: url(../images/2d10_hover.png);
+}
+#d20 {
+	background: url(../images/1d20.png) no-repeat;
+	width: 155px;
+	height: 151px;
+	top: 316px;
+	left: 92px;
+}
+#d20:hover, #d20:active, #d20:focus {
+	background-image: url(../images/1d20_hover.png);
+}
+#d20x2 {
+	background: url(../images/2d20.png) no-repeat;
+	width: 210px;
+	height: 149px;
+	top: 137px;
+	left: 141px;
+}
+#d20x2:hover, #d20x2:active, #d20x2:focus {
+	background-image: url(../images/2d20_hover.png);
+}
+#dicename,#rollme {
+	width: 200px;
+	text-align: center;
+	font-family: georgia;
+	font-size: 72px;
+	font-weight: bold;
+	text-shadow: 2px 2px 20px #ccc;
+	color: #000;
+	top: 350px;
+	left: 350px;
+}
+#rollme {
+	background: url(../images/2d20.png) no-repeat;
+}

@@ -93,14 +93,19 @@ div {
 #d20x2:hover, #d20x2:active, #d20x2:focus {
 	background-image: url(../images/2d20_hover.png);
 }
-#dicename {
+#dicename,#rollme {
 	width: 200px;
 	text-align: center;
-	font-family: georgie;
+	font-family: georgia;
 	font-size: 72px;
 	font-weight: bold;
 	text-shadow: 2px 2px 20px #ccc;
 	color: #000;
 	top: 350px;
 	left: 350px;
+}
+#rollme {
+	background: url(../images/2d20.png) no-repeat;
+	height: 200px;
+	top: 67px;
 }

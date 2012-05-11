@@ -60,7 +60,7 @@ app.get('/roll/:id', function(req, res){
 	roll = req.roll[0];
 	if(roll.number == null) {
 		//rollable
-		res.render('rollthis.jade', { sides: roll.sides });
+		res.render('rollthis.jade', { sides: roll.sides, id: roll.id });
 	} else {
 		//already rolled
 		//output += "Roll value = "+roll.number;
@@ -75,9 +75,8 @@ app.post('/roll', function(req, res){
 		client.query(
 			'INSERT INTO rolls (sides) VALUES (?)', [req.body.sides], function(err, info) {
 				//redirect to roll:id
-				
 				res.send('<script>window.location="/roll/'+info.insertId+'";</script>');
-				
+				res.end();
 			}
 		);
 	} else {
@@ -88,5 +87,5 @@ app.post('/roll', function(req, res){
 		//redirect to roll:id
 		//res.redirect('/roll/'+id);
 	}
-	res.end();
+	
 });

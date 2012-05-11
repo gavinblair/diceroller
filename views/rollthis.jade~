@@ -2,5 +2,4 @@ form(method="post",action="/roll",id="rollform")
 	input(id="id",name="id",value="#{id}")
 	input(id="value",name="value",value="")
 	input(id="sides",name="sides",value="#{sides}")
-	input(id="submit",type="submit")
 #rollme
