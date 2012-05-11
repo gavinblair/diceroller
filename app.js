@@ -81,11 +81,17 @@ app.post('/roll', function(req, res){
 		);
 	} else {
 		//this is a roll, roll it!
+		var num = req.body.value;
+		var id = req.body.id;
 		
 		//save value
-		
-		//redirect to roll:id
-		//res.redirect('/roll/'+id);
+		client.query(
+			'UPDATE rolls SET number = ? WHERE id = ?', [num, id], function(err, info){
+				//redirect to roll/id
+				res.send('<script>window.location="/roll/'+id+'";</script>');
+				res.end();
+			}
+		);
 	}
 	
 });

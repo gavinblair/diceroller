@@ -13,6 +13,9 @@ div {
 	position: absolute;
 	cursor: pointer;
 }
+div.disabled {
+	cursor: auto;
+}
 #d6 {
 	background: url(../images/1d6.png) no-repeat;
 	width: 142px;
@@ -93,7 +96,7 @@ div {
 #d20x2:hover, #d20x2:active, #d20x2:focus {
 	background-image: url(../images/2d20_hover.png);
 }
-#dicename,#rollme {
+#dicename,#rollme, #info {
 	width: 200px;
 	text-align: center;
 	font-family: georgia;
@@ -108,4 +111,10 @@ div {
 	background: url(../images/2d20.png) no-repeat;
 	height: 200px;
 	top: 67px;
+}
+#info {
+	font-size: 90px;
+	top: 180px;
+	left: 330px;
+	text-shadow: 2px 2px 20px #ccc;
 }
